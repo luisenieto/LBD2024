@@ -305,7 +305,7 @@ SET `idCargo` = 10 WHERE `dni` = 30117830; -- error: viola la FK
 
 -- Se crea la tabla DetalleOrdenes como copia de la tabla AdventureWorks2014.PurchaseOrderDetail
 CREATE TABLE IF NOT EXISTS DetalleOrdenes
-SELECT * FROM AdventureWorks2014.PurchaseOrderDetail;
+SELECT * FROM AdventureWorks2014.`Purchasing.PurchaseOrderDetail`;
 
 SHOW INDEX FROM DetalleOrdenes; -- sin índices
 
